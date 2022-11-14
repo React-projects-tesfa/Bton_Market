@@ -1,6 +1,10 @@
 # Bton_Market
 This is a frontend built using React js and materail ui  for displaying the data from and updating the btonmarket andriod mobile app. It uses to basically does this by updating the Django api from which the mobile app gets its data from.
 
+See the screenshot below:
+<img width="1512" alt="Screen Shot 2022-11-13 at 10 59 30 PM" src="https://user-images.githubusercontent.com/62855279/201572422-e2f8fd19-f034-469d-b8b3-b0a1ffb2561e.png">
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
