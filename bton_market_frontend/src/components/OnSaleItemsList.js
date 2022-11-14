@@ -10,11 +10,11 @@ const OnSaleItemsList = (props) => {
 
     <div className='onSaleItems'>
         <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={0}>
+        <Grid container spacing={-1}>
      { props.onSaleItems.map((items, idx) => (
         <div key={items.id}>       
             
-            <Grid item xs={3} md={4} lg={4}>
+            <Grid p={2} item xs={3} md={3} lg={3}>
             <Card 
             name={items.name}
             img_url = {items.img} 
