@@ -1,26 +1,39 @@
 import React from 'react'
+import Card from './Card'
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
 const OnSaleItemsList = (props) => {
     
   return (
 
     <div className='onSaleItems'>
-      {
-      props.onSaleItems.map((items, idx) => (
-        <div key={items.id}>
-            {items.name}         
-            <img src={items.img}/>
-            {items.condition}
-            {items.negotiable}
-            {items.price}
-            {items.seller}
-            {items.sold}
-            <hr/>
+        <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={0}>
+     { props.onSaleItems.map((items, idx) => (
+        <div key={items.id}>       
+            
+            <Grid item xs={3} md={4} lg={4}>
+            <Card 
+            name={items.name}
+            img_url = {items.img} 
+            condition={items.condition} 
+            negotiable={items.negotiable} 
+            price ={items.price}
+            seller = {items.seller}
+            sold = {items.sold}
+            />
+            </Grid>
         </div>
+        
 
         
       ))
-    }
+        }
+      </Grid>
+    </Box>
+    
     </div>
   )
 }

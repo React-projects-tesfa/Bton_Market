@@ -20,7 +20,7 @@ function App() {
  }, []);
   return (
     
-    <div className="container">
+    <div className="main-container">
       <Header username={'Tesfatsion'}/>
       <OnSaleItemsList onSaleItems={onSaleItems} />
     </div>
