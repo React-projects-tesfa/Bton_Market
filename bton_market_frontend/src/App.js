@@ -8,10 +8,11 @@ function fetchOnSaleItems(){
   console.log("Hello")
 }
 
+// http://127.0.0.1:8000/api/onsale-items/
 function App() {
   const [onSaleItems, setOnSaleItems] = useState([]);
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/onsale-items/')
+    fetch('https://btonmarketapi.herokuapp.com/api/onsale-items/')
     .then((response) => response.json())
     .then(data => 
       //console.log(data)
